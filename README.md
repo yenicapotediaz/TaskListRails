@@ -1,8 +1,10 @@
 # Task List Rails ✅
-We are going to build a Task List in Rails. Tracking tasks in a web app will let us focus on following Rails conventions and learning how data flows through a Rails application. This project will enable us to keep track of and persist, add, edit and remove tasks from a list.
+We are going to build a Task List in Rails. This web application will enable us to keep track of list of tasks with the functionality to add, edit and remove tasks from a list. 
+
+Tracking tasks in a web app will let us focus on following Rails conventions and learning how data flows through a Rails application. 
 
 ## Baseline 
-Once you've achieved this baseline, take a walk around the room and see if you can answer questions or help other folks.
+**Once you've achieved this baseline, take a walk around the room and see if you can answer questions or help other folks.**
 
 This project...
 
