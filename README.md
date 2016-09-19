@@ -1,7 +1,7 @@
-# Task List Rails
+# Task List Rails ✅
 We are going to build a Task List in Rails. Tracking tasks in a web app will let us focus on following Rails conventions and learning how data flows through a Rails application. This project will enable us to keep track of and persist, add, edit and remove tasks from a list.
 
-## Baseline
+## Baseline 
 Once you've achieved this baseline, take a walk around the room and see if you can answer questions or help other folks.
 
 This project...
@@ -24,7 +24,7 @@ Each task record will include all of the following. Optional in this context mea
 - description: details about the task 
 - completed_at: the time and date the task was completed 
 
-## Wave 1
+## 🌊 Wave 1
 This wave is where we will introduce the view layer to interact with our application via the browser.
 
 - Set up necessary controller(s) and route(s) that you will need in order to show a task from the database
@@ -33,7 +33,7 @@ This wave is where we will introduce the view layer to interact with our applica
   - The `show` view should include the complete information about the task: name, description, completion status, and completion date.
 - All markup in all views should have semantic relevance.
   
-## Wave 2
+## 🌊 Wave 2
 In this wave we will add the first set of user interactivity and persistence.
 
 - Be able to create a new task:
@@ -45,7 +45,7 @@ In this wave we will add the first set of user interactivity and persistence.
     1. Ask the user to confirm that they definitely want to delete the task.
     1. Delete the task from the database and redirect the user back to the list of remaining tasks
 
-## Wave 3
+## 🌊 Wave 3
 In this wave we will extend the interactivity with users, allowing them to edit existing tasks in a couple of different ways. As always, follow _RESTful_ conventions when implementing these features.
 
 - Add the ability for the user to mark a task complete
