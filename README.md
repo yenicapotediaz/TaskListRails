@@ -1,5 +1,5 @@
 # Task List Rails
-Let's build our Task List in Rails. Solving the same problem--tracking tasks in a web app--will let us focus on following Rails conventions and learning how data flows through a Rails application. This project will enable us to keep track of and persist, add, edit and remove tasks.
+We are going to build a Task List in Rails. Tracking tasks in a web app will let us focus on following Rails conventions and learning how data flows through a Rails application. This project will enable us to keep track of and persist, add, edit and remove tasks from a list.
 
 ## Baseline
 Once you've achieved this baseline, take a walk around the room and see if you can answer questions or help other folks.
@@ -7,7 +7,7 @@ Once you've achieved this baseline, take a walk around the room and see if you c
 This project...
 
 - Will have our standard Github setup (fork this repo and clone to your machine)
-- requires you to create a Rails 4.2.6 application
+- requires you to create a Rails application
   - create a controller for your `Tasks`
   - create a `Task` model a migration.
     - create the database schema and tables with `rake db:migrate`
