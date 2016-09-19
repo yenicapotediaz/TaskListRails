@@ -16,6 +16,14 @@ This project...
 
 Tinker with your Model in the `rails console` in order to ensure you have created your model and can interact with it as expected. 
 
+## Task Data Requirements
+
+Each task record will include all of the following. Optional in this context means that the user may choose not to provide this information, but it is still required for your schema:
+- Self-incrementing identifier (ID)
+- title: the title of the task 
+- description: details about the task 
+- completed_at: the time and date the task was completed 
+
 ## Wave 1
 This wave is where we will introduce the view layer to interact with our application via the browser.
 
