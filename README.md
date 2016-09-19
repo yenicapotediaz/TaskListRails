@@ -19,8 +19,6 @@ Tinker with your Model in the `rails console` in order to ensure you have create
 ## Wave 1
 This wave is where we will introduce the view layer to interact with our application via the browser.
 
-- Use the provided seed data to pre-populate your database with a given set of tasks.
-  - Hint: research `rake db:seed`
 - Set up necessary controller(s) and route(s) that you will need in order to show a task from the database
 - Create a root route for your application that directs users to the list of tasks
   - Each task name in the list should link to a `show` action that will render a new view for the user.
@@ -59,7 +57,6 @@ In this wave, we explore creating ActiveRecord associations by creating `belongs
 
 - Create a model & migration for a new Person object.
   - at a minimum, a Person should have a name
-- Create seed data to add at least three Person records to the database.
 - Each Task in your database can be assigned to a Person, indicating that Person is responsible for completing the Task.
   - Express the relationship between Person and Task using `belongs_to` and `has_many`
   - Update your Task `index` and `show` actions to include displaying the Person's name to which the Task belongs.
