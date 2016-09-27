@@ -35,6 +35,7 @@ This wave is where we will introduce the view layer to interact with our applica
   - The `show` view should include the complete information about the task: name, description, completion status, and completion date.
 - All markup in all views should have semantic relevance.
   
+<!--
 ## 🌊 Wave 2
 In this wave we will add the first set of user interactivity and persistence.
 
@@ -60,3 +61,5 @@ In this wave we will extend the interactivity with users, allowing them to edit 
   - Link to the `edit` action from the task's `show` page.
   - DRY up your code by reusing the view code from the `new` functionality
     - Hint: Rendering _partials_ in Rails.
+
+-->
