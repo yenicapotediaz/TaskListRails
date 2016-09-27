@@ -18,6 +18,7 @@ This project...
   - create a `Task` model a migration.
     - create the database schema and tables with `rake db:migrate`
     - the `Task` model should include _at least_ a name, a description and a completion indicator-->
+    
 <!-- Tinker with your Model in the `rails console` in order to ensure you have created your model and can interact with it as expected. 
 
 ## Task Data Requirements
