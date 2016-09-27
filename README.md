@@ -11,12 +11,14 @@ This project...
 - Will have our standard Github setup (fork this repo and clone to your machine)
 - requires you to create a Rails application
   - create a controller for your `Tasks`
-  - create a `Task` model a migration.
-    - create the database schema and tables with `rake db:migrate`
-    - the `Task` model should include _at least_ a name, a description and a completion indicator
   - conform to Rails conventions on naming and inflection
 
-Tinker with your Model in the `rails console` in order to ensure you have created your model and can interact with it as expected. 
+  <!--- 
+  Baseline Part 2:
+  - create a `Task` model a migration.
+    - create the database schema and tables with `rake db:migrate`
+    - the `Task` model should include _at least_ a name, a description and a completion indicator-->
+<!-- Tinker with your Model in the `rails console` in order to ensure you have created your model and can interact with it as expected. 
 
 ## Task Data Requirements
 
@@ -24,7 +26,7 @@ Each task record will include all of the following. Optional in this context mea
 - Self-incrementing identifier (ID)
 - title: the title of the task 
 - description: details about the task 
-- completed_at: the time and date the task was completed 
+- completed_at: the time and date the task was completed -->
 
 ## 🌊 Wave 1
 This wave is where we will introduce the view layer to interact with our application via the browser.
