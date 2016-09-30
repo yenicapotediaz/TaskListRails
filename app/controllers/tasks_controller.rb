@@ -15,10 +15,23 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     if @task.update(task_params)
-      redirect_to tasks_path
+      completed(@task)
     else
-      render :edit
+      redirect_to tasks_path
     end
+  end
+
+  def completed(task)
+    if task.completion_status == true
+      task.completion_date = Date.today
+      task.save
+    elsif task.completion_status == false
+      task.completion_date = nil
+      task.save
+    else
+      redirect_to tasks_path
+    end
+    redirect_to tasks_path
   end
 
   def new
