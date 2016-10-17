@@ -1,20 +1,32 @@
 Rails.application.routes.draw do
+  root 'homepage#index'
 
-  root 'tasks#index'
+  resources :tasks
 
-  get '/tasks', to: 'tasks#index', as: 'tasks'
-  get 'tasks/new', to: 'tasks#new', as: 'task_new'
+  get "/auth/:provider/callback" =>  "sessions#create"
 
-  post 'tasks' => 'tasks#create'
+  get "/sessions/login_failure", to: "sessions#login_failure", as: 'login_failure'
 
-  get '/tasks/:id/edit', to: 'tasks#edit', as: 'task_edit'
-  patch '/tasks/:id' => 'tasks#update'
-  # patch '/tasks/:id/completed', to: 'tasks#completed', as: 'task_completed'
+  get '/sessions', to: 'sessions#index', as: 'sessions'
 
-  get 'tasks/:id', to: 'tasks#show', as: 'task'
+  delete '/sessions', to: 'sessions#destroy'
 
-  # get 'tasks/:id/destroy', to: 'tasks#confirm_deletion', as: 'task_destroy'
-  delete '/tasks/:id' => 'tasks#destroy'
+  
+  # root 'tasks#index'
+  #
+  # get '/tasks', to: 'tasks#index', as: 'tasks'
+  # get 'tasks/new', to: 'tasks#new', as: 'task_new'
+  #
+  # post 'tasks' => 'tasks#create'
+  #
+  # get '/tasks/:id/edit', to: 'tasks#edit', as: 'task_edit'
+  # patch '/tasks/:id' => 'tasks#update'
+  # # patch '/tasks/:id/completed', to: 'tasks#completed', as: 'task_completed'
+  #
+  # get 'tasks/:id', to: 'tasks#show', as: 'task'
+  #
+  # # get 'tasks/:id/destroy', to: 'tasks#confirm_deletion', as: 'task_destroy'
+  # delete '/tasks/:id' => 'tasks#destroy'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
