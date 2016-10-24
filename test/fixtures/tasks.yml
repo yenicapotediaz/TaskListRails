@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyString
-  completion_status: false
+homework:
+  name: Homework
+  description: Finish all homework for rails class
+  completion_status: true
   completion_date: 2016-09-28
+  user_id: 1
 
-two:
-  name: MyString
-  description: MyString
-  completion_status: false
+cat_stuff:
+  name: cat stuff
+  description: cuddle and love cats
+  completion_status: yes
   completion_date: 2016-09-28
+  user_id: 2
