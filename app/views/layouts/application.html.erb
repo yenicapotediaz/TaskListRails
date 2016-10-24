@@ -7,7 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <nav>
+      <ul class="top-corner-left">
+        <li><%= link_to "Tasks", tasks_path %></li>
+        <li><%= link_to "New Task", new_task_path %></li>
+      </ul>
+      <ul class="top-corner-right">
+        <li><%= login_status %></li>
+        <li><%= login_button %></li>
+      </ul>
+    </nav>
+  </header>
 <%= yield %>
 
 </body>
