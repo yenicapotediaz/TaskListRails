@@ -1,14 +1,15 @@
-<h1>Task</h1>
+<h1>These are your tasks</h1>
+
 <% @tasks.each do |t| %>
   <p>
     <%= form_for t do |f| %>
       <%= f.check_box :completion_status %>
-      <%= f.submit :submit, method: :completed %>
+      <%= f.submit "update", method: :completed %>
     <% end %>
     <%= link_to "#{t.name}", task_path(t.id) %>
   </p>
 <% end %>
 
 <p>
-  <%= link_to "Create new task", task_new_path%>
+  <%= link_to "Create new task", new_task_path%>
 </p>

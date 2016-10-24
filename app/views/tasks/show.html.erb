@@ -1,13 +1,14 @@
-<h1>Tasks#show</h1>
+<h1>Task Details</h1>
 
 <ul>
   <li>Name: <%= @task.name %></li>
   <li>Description: <%= @task.description%></li>
-  <li>Completion Status: <%= @task.completion_status%></li>
+  <li>Completed: <%= @task.completion_status%></li>
   <li>Completed at: <%= @task.completion_date%></li>
 </ul>
 
 <p>
-<%= button_to "Edit", task_edit_path(@task), method: :get%>
-<%= button_to "Destroy", task_path(@task), method: :delete, data: { :confirm => 'are you really sure?'} %>
+  <%= button_to "All tasks", tasks_path, method: :get%>
+  <%= button_to "Edit", edit_task_path(@task), method: :get%>
+  <%= button_to "Delete", task_path(@task), method: :delete, data: { :confirm => 'are you for reals?'} %>
 </p>
